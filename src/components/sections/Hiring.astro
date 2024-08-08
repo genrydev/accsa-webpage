@@ -19,12 +19,17 @@ const images = [
 <section class="bg-accsa-blue pt-28 pb-20 text-white">
   <div class="flex flex-col items-center">
     <p class="text-5xl font-bold mb-5 text-center">Sumate a nuestro equipo</p>
-    <div class="flex mx-5 mb-4">
+    <div class="flex mx-5 mb-4" id="gallery">
       {
         images.map((image) => (
-          <div>
-            <img class="" src={`${imageFolder}/${image}`} alt={image} />
-          </div>
+          <a
+            href={`${imageFolder}/${image}`}
+            data-pswp-width="500"
+            data-pswp-height="300"
+            target="_blank"
+          >
+            <img src={`${imageFolder}/${image}`} alt={image} />
+          </a>
         ))
       }
     </div>
@@ -42,3 +47,15 @@ const images = [
     </a>
   </div>
 </section>
+
+<script>
+  import PhotoSwipeLightbox from "photoswipe/lightbox";
+  import "photoswipe/style.css";
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: "#gallery",
+    children: "a",
+    pswpModule: () => import("photoswipe"),
+  });
+  lightbox.init();
+</script>

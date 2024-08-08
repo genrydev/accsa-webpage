@@ -19,6 +19,8 @@
 - En varios lugares (formularios) donde decía email se cambió por correo
 - hiring section: Mejoras en el espaciado de los elementos
 - Copy en footer
+- En los formularios, el campo activo se pone el borde de color azul
+- Section hiring: imágenes como galería
 
 ## Ortografía
 
