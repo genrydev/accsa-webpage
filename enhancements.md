@@ -13,15 +13,15 @@
 
 - Navegación usando transiciones, navegación más fluida
 - Varias mejoras visuales en el footer en dispositivos pequeños
-- Twitter (X) icon updated in footer
-- Click en la dirección te abre google map con un punto en la dirección
+- Twitter (X) icon actualizado en footer y header
+- Footer: Click en la dirección te abre google map con un punto en la dirección
 - Estandarización de iconos de redes sociales en el header y en el footer
-- En varios lugares (formularios) donde decía email se cambió por correo
-- hiring section: Mejoras en el espaciado de los elementos
+- Section Hiring: Mejoras en el espaciado de los elementos
 - Copy en footer
 - En los formularios, el campo activo se pone el borde de color azul
-- Section hiring: imágenes como galería
+- Section Hiring: imágenes como galería
 
 ## Ortografía
 
 - Section Hiring: Se cambió 'interesado' por 'interesad@'
+- En varios lugares (formularios) donde decía email se cambió por correo
