@@ -1,0 +1,130 @@
+---
+// TODO: Form submit
+import { Image } from "astro:assets";
+
+import MainLayout from "@/layouts/MainLayout.astro";
+import Hirring from "@/components/sections/Hiring.astro";
+
+import ContactHeader from "@/assets/images/contact-header.jpg";
+import Mapa from "@/assets/images/mapa.jpg";
+---
+
+<MainLayout>
+  <section>
+    <div class="relative">
+      <!-- TODO: Image optimization -->
+      <Image src={ContactHeader} alt="Imagen de contacto" />
+      <div
+        class="absolute bottom-10 left-14 md:text-5xl capitalize text-white font-bold text-3xl"
+      >
+        contacto
+      </div>
+    </div>
+  </section>
+  <section class="mt-28 mb-24 sm:mx-5 md:mx-16">
+    <div class="flex flex-col md:flex-row gap-10">
+      <div class="flex flex-col gap-8 md:w-2/3 lg:w-1/2">
+        <p>
+          <span class="font-bold uppercase">arnaldo castro</span>, con sede en
+          Montevideo, Uruguay, cuenta también con oficinas en Argentina y
+          Paraguay (Cidicom Soluciones).
+        </p>
+        <p>Contactate con nosotros completando el siguiente formulario:</p>
+        <form action="" class="flex flex-col gap-y-8">
+          <div class="flex flex-col md:flex-row gap-7">
+            <input
+              class="md:w-2/3 border-black text-black"
+              type="text"
+              autocomplete="name"
+              placeholder="Nombre"
+              name="name"
+            />
+            <input
+              class="border-black text-black"
+              type="email"
+              autocomplete="email"
+              placeholder="Correo"
+              name="email"
+            />
+          </div>
+          <div class="flex gap-7 flex-col md:flex-row">
+            <select class="border-black md:w-2/3" name="servicio">
+              <option value="Servicio de interés">Servicio de interés</option>
+              <option value="Desarrollo de Software a medida"
+                >Desarrollo de Software a medida</option
+              >
+              <option
+                value="Consultoría e Implementación para Gestión de Empresas"
+                >Consultoría e Implementación para Gestión de Empresas</option
+              >
+              <option value="Inteligencia Analítica"
+                >Inteligencia Analítica</option
+              >
+              <option value="Inteligencia Artificial"
+                >Inteligencia Artificial</option
+              >
+              <option value="DevOps">DevOps</option>
+              <option value="Blockchain">Blockchain</option>
+              <option value="RPA">RPA</option>
+              <option value="Video Analítica">Video Analítica</option>
+              <option value="Internet de las Cosas"
+                >Internet de las Cosas</option
+              >
+              <option value="Ciudades Inteligentes"
+                >Ciudades Inteligentes</option
+              >
+              <option value="Cloud">Cloud</option>
+              <option value="Virtualización">Virtualización</option>
+              <option value="Outsourcing">Outsourcing</option>
+              <option value="Consultoría">Consultoría</option>
+              <option value="Monitoreo">Monitoreo</option>
+              <option value="Seguridad">Seguridad</option>
+              <option value="Back Up">Back Up</option>
+              <option value="Service Desk">Service Desk</option>
+              <option value="Soporte">Soporte</option>
+              <option value="Gestión Documental">Gestión Documental</option>
+              <option value="Servicios de Infraestructura"
+                >Servicios de Infraestructura</option
+              >
+              <option value="DataCenters">DataCenters</option>
+              <option value="Servicios Financieros"
+                >Servicios Financieros</option
+              >
+              <option value="Automatización Industrial"
+                >Automatización Industrial</option
+              >
+              <option value="Otros">Otros</option></select
+            >
+            <input
+              class="border-black text-black"
+              type="email"
+              autocomplete="tel"
+              placeholder="Teléfono"
+              name="phone"
+            />
+          </div>
+          <div>
+            <textarea name="message" class="w-full h-60 border-black"
+            ></textarea>
+          </div>
+          <div class="flex justify-end">
+            <button
+              type="submit"
+              class="bg-accsa-blue w-min text-white py-3 px-7 rounded-full"
+              >Enviar</button
+            >
+          </div>
+        </form>
+      </div>
+      <div class="md:w-1/3 lg:w-1/2">
+        <!-- TODO: Change to mapbox or google map -->
+        <Image
+          src={Mapa}
+          alt="Mapa con la ubicación de la empresa"
+          class="w-auto"
+        />
+      </div>
+    </div>
+  </section>
+  <Hirring />
+</MainLayout>

@@ -2,12 +2,20 @@
 import { Image } from "astro:assets";
 import Menu from "@/components/shared/Menu.astro";
 import Social from "@/components/shared/Social.astro";
+import MenuBurger from "@/components/shared/MenuBurger.astro";
 
 import Logo from "@/assets/images/logo.png";
+import LogoMobile from "@/assets/images/logo-mobile.png";
 ---
 
 <nav class="flex mx-10">
-  <Image src={Logo} alt="Arnaldo Castro Logo" />
+  <a href="/" class="hidden lg:block">
+    <Image src={Logo} alt="Arnaldo Castro Logo" />
+  </a>
+  <a href="/" class="block lg:hidden my-4">
+    <Image src={LogoMobile} alt="Arnaldo Castro Logo" height={40} />
+  </a>
   <Menu />
   <Social />
+  <MenuBurger />
 </nav>

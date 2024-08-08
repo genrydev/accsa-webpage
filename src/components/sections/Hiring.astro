@@ -1,0 +1,44 @@
+---
+// TODO: Ampliar imagen al dar click
+// TODO: Usar componente Image de Astro y optimizar imagen por dispositivo
+import IconArrowRight from "@/components/icons/IconArrowRight.astro";
+
+const imageFolder = "/src/assets/images/section-hiring";
+const images = [
+  "contacto_sumate01.jpg",
+  "contacto_sumate02.jpg",
+  "contacto_sumate03.jpg",
+  "contacto_sumate04.jpg",
+  "contacto_sumate05.jpg",
+  "contacto_sumate06.jpg",
+  "contacto_sumate07.jpg",
+  "contacto_sumate08.jpg",
+];
+---
+
+<section class="bg-accsa-blue pt-28 pb-20 text-white">
+  <div class="flex flex-col items-center">
+    <p class="text-5xl font-bold mb-5 text-center">Sumate a nuestro equipo</p>
+    <div class="flex mx-5 mb-4">
+      {
+        images.map((image) => (
+          <div>
+            <img class="" src={`${imageFolder}/${image}`} alt={image} />
+          </div>
+        ))
+      }
+    </div>
+    <p class="font-bold text-sm mx-10 lg:w-1/2 text-center mb-4">
+      En <span>ARNALDO CASTRO</span> siempre estamos en búsqueda de talentos, profesionales
+      creativos, emprendedores, con capacidad de innovar y trabajar en equipo. Si
+      estás interesad@ en sumarte a una empresa líder en el mercado envía tu CV,
+      y te tendremos en cuenta cuando se presenten oportunidades laborales.
+    </p>
+    <a
+      href="/sumate-al-equipo"
+      class="border-2 px-4 py-2 rounded-full border-white flex gap-1 items-center hover:underline"
+    >
+      Mándanos tu CV <IconArrowRight class="size-4" />
+    </a>
+  </div>
+</section>
