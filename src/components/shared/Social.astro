@@ -1,0 +1,54 @@
+---
+import IconX from "@/components/icons/IconX.astro";
+import IconFacebook from "@/components/icons/IconFacebook.astro";
+import IconInstagram from "@/components/icons/IconInstagram.astro";
+import IconLinkedIn from "@/components/icons/IconLinkedin.astro";
+import IconYoutube from "@/components/icons/IconYoutube.astro";
+import IconSearch from "@/components/icons/IconSearch.astro";
+
+const socials = [
+  {
+    title: "twitter",
+    url: "https://twitter.com/arnaldocastrosa",
+    icon: IconX,
+  },
+  {
+    title: "facebook",
+    url: "http://www.facebook.com/pages/Arnaldo-C-Castro-SA/392515510774019?ref=tn_tnmn",
+    icon: IconFacebook,
+  },
+  ,
+  {
+    title: "linkedin",
+    url: "https://www.linkedin.com/company/98176",
+    icon: IconLinkedIn,
+  },
+  {
+    title: "youtube",
+    url: "http://www.youtube.com/arnaldoccastrosa",
+    icon: IconYoutube,
+  },
+  {
+    title: "instagram",
+    url: "http://www.instagram.com/arnaldocastrosa",
+    icon: IconInstagram,
+  },
+];
+---
+
+<div class="flex items-center gap-2 social">
+  {
+    socials.map(({ title, icon: Icon, url }) => (
+      <a href={url} target="_blank" rel="noopener noreferrer" title={title}>
+        <Icon class="size-4 text-accsa-gray hover:text-accsa-blue" />
+      </a>
+    ))
+  }
+  <IconSearch class="size-4 text-accsa-gray rotate-90" />
+</div>
+
+<style>
+  .social a:last-of-type {
+    @apply h-8 border-e-2 pe-3 me-3 flex items-center;
+  }
+</style>

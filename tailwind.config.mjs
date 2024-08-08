@@ -7,6 +7,7 @@ export default {
         accsa: {
           blue: "#1C64EE",
           cyan: "#0693e3",
+          gray: "#888888",
         },
       },
     },

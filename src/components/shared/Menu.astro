@@ -1,0 +1,30 @@
+---
+const menu = [
+  {
+    title: "Nosotros",
+    url: "",
+  },
+  {
+    title: "Soluciones & Servicios",
+    url: "",
+  },
+  {
+    title: "Infraestructura TI",
+    url: "",
+  },
+  {
+    title: "Blog",
+    url: "",
+  },
+  {
+    title: "Contacto",
+    url: "/contacto",
+  },
+];
+---
+
+<div class="grow content-center">
+  <div class="flex gap-5 justify-center">
+    {menu.map((item) => <a href={item.url}>{item.title}</a>)}
+  </div>
+</div>

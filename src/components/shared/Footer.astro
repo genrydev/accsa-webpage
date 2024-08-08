@@ -1,14 +1,14 @@
 ---
 import { Image } from "astro:assets";
-import logoWhite from "@/assets/images/logo-white.png";
-import IconLocation from "@/components/icons/icon-location.astro";
-import IconPhone from "@/components/icons/icon-phone.astro";
-import IconMail from "@/components/icons/icon-mail.astro";
-import IconX from "@/components/icons/icon-x.astro";
-import IconFacebook from "@/components/icons/icon-facebook.astro";
-import IconInstagram from "@/components/icons/icon-instagram.astro";
-import IconLinkedIn from "@/components/icons/icon-linkedin.astro";
-import IconYoutube from "@/components/icons/icon-youtube.astro";
+import LogoWhite from "@/assets/images/logo-white.png";
+import IconLocation from "@/components/icons/IconLocation.astro";
+import IconPhone from "@/components/icons/IconPhone.astro";
+import IconMail from "@/components/icons/IconMail.astro";
+import IconX from "@/components/icons/IconX.astro";
+import IconFacebook from "@/components/icons/IconFacebook.astro";
+import IconInstagram from "@/components/icons/IconInstagram.astro";
+import IconLinkedIn from "@/components/icons/IconLinkedin.astro";
+import IconYoutube from "@/components/icons/IconYoutube.astro";
 import type { Social } from "@/types";
 
 const socials: Social[] = [
@@ -44,7 +44,7 @@ const socials: Social[] = [
 <footer class="bg-[#2b2b2b] p-16 text-white">
   <div class="grid sm:grid-cols-1 md:grid-cols-2">
     <div class="">
-      <Image src={logoWhite} alt="Logo Arnaldo Castro" />
+      <Image src={LogoWhite} alt="Logo Arnaldo Castro" />
       <div class="mb-4">Uruguay | Argentina | Paraguay</div>
       <div class="text-sm flex items-center gap-1">
         <IconLocation class="size-4" />

@@ -12,6 +12,7 @@ import "@fontsource/lato/900-italic.css";
 
 import "@/css/global.css";
 import Footer from "@/components/shared/Footer.astro";
+import NavBar from "@/components/shared/NavBar.astro";
 ---
 
 <html lang="en">
@@ -24,6 +25,7 @@ import Footer from "@/components/shared/Footer.astro";
     <link rel="sitemap" href="/sitemap-index.xml" />
   </head>
   <body>
+    <NavBar />
     <main>
       <slot />
     </main>

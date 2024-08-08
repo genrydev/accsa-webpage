@@ -1,0 +1,13 @@
+---
+import { Image } from "astro:assets";
+import Menu from "@/components/shared/Menu.astro";
+import Social from "@/components/shared/Social.astro";
+
+import Logo from "@/assets/images/logo.png";
+---
+
+<nav class="flex mx-10">
+  <Image src={Logo} alt="Arnaldo Castro Logo" />
+  <Menu />
+  <Social />
+</nav>

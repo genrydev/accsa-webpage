@@ -14,3 +14,4 @@
 - Varias mejoras visuales en el footer en dispositivos pequeños
 - Twitter (X) icon updated in footer
 - Click en la dirección te abre google map con un punto en la dirección
+- Estandarización de iconos de redes sociales en el header y en el footer
