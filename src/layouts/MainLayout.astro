@@ -1,4 +1,6 @@
 ---
+import { ViewTransitions } from "astro:transitions";
+
 import "@fontsource/lato/100.css";
 import "@fontsource/lato/300.css";
 import "@fontsource/lato/400.css";
@@ -23,10 +25,11 @@ import NavBar from "@/components/shared/NavBar.astro";
     <meta name="generator" content={Astro.generator} />
     <title>Arnaldo C. Castro S.A.</title>
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <ViewTransitions />
   </head>
   <body>
     <NavBar />
-    <main>
+    <main class="mt-[72px] lg:mt-[140px]">
       <slot />
     </main>
     <Footer />

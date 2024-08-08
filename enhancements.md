@@ -11,12 +11,13 @@
 
 ## Visuales
 
+- Navegación usando transiciones, navegación más fluida
 - Varias mejoras visuales en el footer en dispositivos pequeños
 - Twitter (X) icon updated in footer
 - Click en la dirección te abre google map con un punto en la dirección
 - Estandarización de iconos de redes sociales en el header y en el footer
 - En varios lugares (formularios) donde decía email se cambió por correo
-- hirring section: Mejoras en el espaciado de los elementos
+- hiring section: Mejoras en el espaciado de los elementos
 
 ## Ortografía
 
