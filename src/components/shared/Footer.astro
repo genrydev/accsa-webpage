@@ -1,0 +1,96 @@
+---
+import { Image } from "astro:assets";
+import logoWhite from "@/assets/images/logo-white.png";
+import IconLocation from "@/components/icons/icon-location.astro";
+import IconPhone from "@/components/icons/icon-phone.astro";
+import IconMail from "@/components/icons/icon-mail.astro";
+import IconX from "@/components/icons/icon-x.astro";
+import IconFacebook from "@/components/icons/icon-facebook.astro";
+import IconInstagram from "@/components/icons/icon-instagram.astro";
+import IconLinkedIn from "@/components/icons/icon-linkedin.astro";
+import IconYoutube from "@/components/icons/icon-youtube.astro";
+import type { Social } from "@/types";
+
+const socials: Social[] = [
+  {
+    title: "twitter",
+    url: "https://twitter.com/arnaldocastrosa",
+    icon: IconX,
+  },
+  {
+    title: "facebook",
+    url: "http://www.facebook.com/pages/Arnaldo-C-Castro-SA/392515510774019?ref=tn_tnmn",
+    icon: IconFacebook,
+  },
+  ,
+  {
+    title: "linkedin",
+    url: "https://www.linkedin.com/company/98176",
+    icon: IconLinkedIn,
+  },
+  {
+    title: "youtube",
+    url: "http://www.youtube.com/arnaldoccastrosa",
+    icon: IconYoutube,
+  },
+  {
+    title: "instagram",
+    url: "http://www.instagram.com/arnaldocastrosa",
+    icon: IconInstagram,
+  },
+];
+---
+
+<footer class="bg-[#2b2b2b] p-16 text-white">
+  <div class="grid sm:grid-cols-1 md:grid-cols-2">
+    <div class="">
+      <Image src={logoWhite} alt="Logo Arnaldo Castro" />
+      <div class="mb-4">Uruguay | Argentina | Paraguay</div>
+      <div class="text-sm flex items-center gap-1">
+        <IconLocation class="size-4" /> Julio Herrera y Obes 1626, Montevideo, Uruguay
+      </div>
+      <div class="text-sm flex items-center gap-1">
+        <IconPhone class="size-4" />
+        <a href="tel:+59829027000">(598) 2902 7000</a>
+      </div>
+      <div class="text-sm flex items-center gap-1">
+        <IconMail class="size-4" />
+        <a href="mailto:info@arnaldocastro.com.uy">
+          info@arnaldocastro.com.uy
+        </a>
+      </div>
+      <div class="flex flex-row mb-20 gap-3 mt-3">
+        {
+          socials.map(({ icon: Icon, url }) => (
+            <a href={url} target="_blank" rel="noopener noreferrer">
+              <Icon class="size-5" />
+            </a>
+          ))
+        }
+      </div>
+    </div>
+    <div class="flex flex-col">
+      <p class="font-bold">Inscríbase a nuestra newsletter:</p>
+      <form class="mb-10">
+        <input name="email" type="email" class="px-2 py-3" />
+        <button type="button" class="uppercase px-2 py-3 bg-accsa-blue"
+          >inscribirse</button
+        >
+      </form>
+      <div class="flex flex-row gap-5">
+        <a
+          href="https://mail.arnaldocastro.com.uy/owa"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="border-2 px-3 py-2 rounded-full hover:underline">Webaccess</a
+        ><a
+          href="https://nodumweb.arnaldocastro.com.uy/nweb/NODUMWEB/desk/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="border-2 px-3 py-2 rounded-full hover:underline"
+          >Auto Gestión</a
+        >
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,31 @@
+---
+import "@fontsource/lato/100.css";
+import "@fontsource/lato/300.css";
+import "@fontsource/lato/400.css";
+import "@fontsource/lato/700.css";
+import "@fontsource/lato/900.css";
+import "@fontsource/lato/100-italic.css";
+import "@fontsource/lato/300-italic.css";
+import "@fontsource/lato/400-italic.css";
+import "@fontsource/lato/700-italic.css";
+import "@fontsource/lato/900-italic.css";
+
+import "@/css/global.css";
+import Footer from "@/components/shared/Footer.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Arnaldo C. Castro S.A.</title>
+  </head>
+  <body>
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
