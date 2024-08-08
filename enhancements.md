@@ -18,6 +18,7 @@
 - Estandarización de iconos de redes sociales en el header y en el footer
 - En varios lugares (formularios) donde decía email se cambió por correo
 - hiring section: Mejoras en el espaciado de los elementos
+- Copy en footer
 
 ## Ortografía
 
